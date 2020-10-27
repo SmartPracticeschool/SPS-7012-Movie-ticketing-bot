@@ -1,0 +1,1723 @@
+{
+  "intents": [
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Good Afternoon"
+        },
+        {
+          "text": "Good Evening"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hi"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Inquiry",
+      "examples": [
+        {
+          "text": "Book a ticket for a movie for some"
+        },
+        {
+          "text": "How many tickets"
+        },
+        {
+          "text": "how much for 1 ticket"
+        },
+        {
+          "text": "is food allowed inside the hall"
+        },
+        {
+          "text": "Is parking facility available"
+        },
+        {
+          "text": "I want a ticket to watch the movie"
+        },
+        {
+          "text": "I want the Movie list"
+        },
+        {
+          "text": "I would like to book a seat"
+        },
+        {
+          "text": "Please inform the movies now"
+        },
+        {
+          "text": "What is the price for 1 ticket"
+        },
+        {
+          "text": "what time is the show"
+        },
+        {
+          "text": "Which are the movies being played"
+        },
+        {
+          "text": "Which movies are available"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Movies_Availability",
+      "examples": [
+        {
+          "text": "is a movie being screened"
+        },
+        {
+          "text": "Is ticket available for Bangalore Days"
+        },
+        {
+          "text": "Is ticket available for Jungle book"
+        },
+        {
+          "text": "Is ticket available for Mangalyaan"
+        },
+        {
+          "text": "Is ticket available for The Lion King"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "seats",
+      "examples": [
+        {
+          "text": "1"
+        },
+        {
+          "text": "2"
+        },
+        {
+          "text": "3"
+        },
+        {
+          "text": "4"
+        },
+        {
+          "text": "5"
+        },
+        {
+          "text": "6"
+        },
+        {
+          "text": "7"
+        },
+        {
+          "text": "8"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good Afternoon",
+          "synonyms": [
+            "ga",
+            "gd aft"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good evening",
+          "synonyms": [
+            "gd eve",
+            "ge"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Morning",
+          "synonyms": [
+            "gd mrng",
+            "gm"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hello",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ok",
+          "synonyms": [
+            "k..",
+            "okay",
+            "yes"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Inquiry",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "booking",
+          "synonyms": [
+            "reserve",
+            "seat",
+            "ticket"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "cost",
+          "synonyms": [
+            "price",
+            "value"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "food",
+          "synonyms": [
+            "beverages",
+            "popcorn",
+            "water"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Movies",
+          "synonyms": [
+            "films",
+            "list ",
+            "movie",
+            "picture"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "parking",
+          "synonyms": [
+            "vehicle"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "timings",
+          "synonyms": [
+            "time",
+            "timing",
+            "when"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Movies_Availablity",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Bahubali",
+          "synonyms": [
+            "Anushka"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bangalore Days",
+          "synonyms": [
+            "BD"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Lion King",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mangalyaan",
+          "synonyms": [
+            "Mars",
+            "Vidya Balan"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tanhaji",
+          "synonyms": [
+            "the unsung hero"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Mutiplexes",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Innovative",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "INOX",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "PVR",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Satyam",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "payment",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Card",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "COD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "UPI",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "region",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Bangalore",
+          "synonyms": [
+            "Bengaluru"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Chennai",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hyderabad",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mumbai",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "slot",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "First Show",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Matinee",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Morning show",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Night Show",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_6_1603265630036",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Select the Multiplex:",
+            "options": [
+              {
+                "label": "PVR",
+                "value": {
+                  "input": {
+                    "text": "PVR"
+                  }
+                }
+              },
+              {
+                "label": "Satyam",
+                "value": {
+                  "input": {
+                    "text": "Satyam"
+                  }
+                }
+              },
+              {
+                "label": "Innovative",
+                "value": {
+                  "input": {
+                    "text": "Innovative"
+                  }
+                }
+              },
+              {
+                "label": "Inox",
+                "value": {
+                  "input": {
+                    "text": "Inox"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_8_1603273425183",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1603273425190",
+      "previous_sibling": "handler_7_1603273425190"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Okay. Enter your Phone No:"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1603273750064",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1603273750070",
+      "previous_sibling": "handler_3_1603273750070"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Your Ticket details are sent to you. We accept COD, UPI and card payment. Mention your mode of payment."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1603275395461",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1603275395468",
+      "previous_sibling": "handler_7_1603275395468"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1603273750064",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_3_1603273750070"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1603273932663",
+      "context": {
+        "number_2": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_3_1603273932669"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1603273372231",
+      "context": {
+        "slot": "@slot"
+      },
+      "conditions": "@slot",
+      "event_name": "input",
+      "dialog_node": "handler_5_1603273372237"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Enter the slot :",
+            "options": [
+              {
+                "label": "10:30 AM",
+                "value": {
+                  "input": {
+                    "text": "Morning show"
+                  }
+                }
+              },
+              {
+                "label": "2:30PM",
+                "value": {
+                  "input": {
+                    "text": "Matinee"
+                  }
+                }
+              },
+              {
+                "label": "6:30PM",
+                "value": {
+                  "input": {
+                    "text": "First show"
+                  }
+                }
+              },
+              {
+                "label": "10:30PM",
+                "value": {
+                  "input": {
+                    "text": "Night show"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_9_1603273372231",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1603273372237",
+      "previous_sibling": "handler_5_1603273372237"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1603273425183",
+      "context": {
+        "Mutiplexes": "@Mutiplexes"
+      },
+      "conditions": "@Mutiplexes",
+      "event_name": "input",
+      "dialog_node": "handler_7_1603273425190"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1603275395461",
+      "context": {
+        "payment": "@payment"
+      },
+      "conditions": "@payment",
+      "event_name": "input",
+      "dialog_node": "handler_7_1603275395468"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "OTP is sent to your mobile number $number. Enter the OTP : "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1603273932663",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1603273932669",
+      "previous_sibling": "handler_3_1603273932669"
+    },
+    {
+      "type": "standard",
+      "title": "Movies_Availability",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Movies_Availablity || #Movies_Availability",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1603262164424",
+      "previous_sibling": "node_8_1602839749890"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greetings || @Greetings",
+      "dialog_node": "node_2_1602838217828",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "region",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@region",
+      "dialog_node": "node_5_1603262289690",
+      "previous_sibling": "node_1_1603262164424"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Enter the Date:"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#seats",
+      "dialog_node": "node_5_1603275050004",
+      "previous_sibling": "node_5_1603262289690"
+    },
+    {
+      "type": "frame",
+      "title": "Date and Time",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Booking Done!!!  Make the payment via $payment to complete booking.  Booking details are:\nTickets in $Mutiplexes for $slot is booked for you. Enjoy!!!!!! \nThank you for your booking."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@sys-date",
+      "dialog_node": "node_6_1603265630036",
+      "previous_sibling": "node_5_1603275050004"
+    },
+    {
+      "type": "standard",
+      "title": "Deleting Contexts",
+      "output": {
+        "deleted": "<?context.remove('slot')?><?context.remove('Mutiplexes')?><?context.remove('number')?><?context.remove('number_2')?><?context.remove('payment')?>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1603265630036",
+      "conditions": "true",
+      "dialog_node": "node_7_1603518837937"
+    },
+    {
+      "type": "standard",
+      "title": "Inquiry",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Inquiry || @Inquiry",
+      "digress_in": "returns",
+      "dialog_node": "node_8_1602839749890",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_2_1602838217828"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. I am Movie Bot. I am capable of displaying the List of Movies, show timings and price . How may I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "r the movie being displayed",
+            "source": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F93%2F72%2Faf%2F9372af1c88167a8fde68b112729f0353.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F507217976778132085%2F&tbnid=YpT1mbRRvi6ccM&vet=12ahUKEwi07r2t9MLsAhXCDLcAHbsoDpsQMygBegUIARCvAQ..i&docid=2EnQHgqJ5KTneM&w=768&h=771&q=movie%20list&hl=en&ved=2ahUKEwi07r2t9MLsAhXCDLcAHbsoDpsQMygBegUIARCvAQ.jpg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "disabled": true,
+      "dialog_node": "response_10_1603187957842"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Select the number of seats:",
+            "options": [
+              {
+                "label": "1",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "2",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              },
+              {
+                "label": "3",
+                "value": {
+                  "input": {
+                    "text": "3"
+                  }
+                }
+              },
+              {
+                "label": "4",
+                "value": {
+                  "input": {
+                    "text": "4"
+                  }
+                }
+              },
+              {
+                "label": "5",
+                "value": {
+                  "input": {
+                    "text": "5"
+                  }
+                }
+              },
+              {
+                "label": "6",
+                "value": {
+                  "input": {
+                    "text": "6"
+                  }
+                }
+              },
+              {
+                "label": "7",
+                "value": {
+                  "input": {
+                    "text": "7"
+                  }
+                }
+              },
+              {
+                "label": "8",
+                "value": {
+                  "input": {
+                    "text": "8"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1603262289690",
+      "conditions": "@region:Chennai",
+      "dialog_node": "response_10_1603265064672",
+      "previous_sibling": "response_7_1603262333557"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Select the number of seats:",
+            "options": [
+              {
+                "label": "1",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "2",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              },
+              {
+                "label": "3",
+                "value": {
+                  "input": {
+                    "text": "3"
+                  }
+                }
+              },
+              {
+                "label": "4",
+                "value": {
+                  "input": {
+                    "text": "4"
+                  }
+                }
+              },
+              {
+                "label": "5",
+                "value": {
+                  "input": {
+                    "text": "5"
+                  }
+                }
+              },
+              {
+                "label": "6",
+                "value": {
+                  "input": {
+                    "text": "6"
+                  }
+                }
+              },
+              {
+                "label": "7",
+                "value": {
+                  "input": {
+                    "text": "7"
+                  }
+                }
+              },
+              {
+                "label": "8",
+                "value": {
+                  "input": {
+                    "text": "8"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1603262289690",
+      "conditions": "@region:Hyderabad",
+      "dialog_node": "response_1_1603265129534",
+      "previous_sibling": "response_10_1603265064672"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Evening. How may I help you!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602838217828",
+      "conditions": "@Greetings:(Good evening)",
+      "dialog_node": "response_2_1602838457409",
+      "previous_sibling": "response_5_1602838441598"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sorry! You want to know  about movie list or show timings."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1602839749890",
+      "conditions": "anything_else",
+      "dialog_node": "response_2_1602840624185",
+      "previous_sibling": "response_5_1603188579837"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How may I help you!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602838217828",
+      "conditions": "@Greetings:ok",
+      "dialog_node": "response_2_1603188289547",
+      "previous_sibling": "response_8_1602838499523"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Tanhaji, The unsung Hero",
+            "source": "https://i.pinimg.com/originals/be/59/b5/be59b50efb5baef8b21e1be74379f73d.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Click on the region you want:",
+            "options": [
+              {
+                "label": "Bangalore",
+                "value": {
+                  "input": {
+                    "text": "Bangalore"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Hyderabad",
+                "value": {
+                  "input": {
+                    "text": "Hyderabad"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1603262164424",
+      "conditions": "@Movies_Availablity:Tanhaji",
+      "dialog_node": "response_2_1603262164435"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Yes; Parking Space is provided free of cost in basement."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1602839749890",
+      "conditions": "@Inquiry:parking",
+      "dialog_node": "response_3_1603103538739",
+      "previous_sibling": "response_8_1602840507536"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Bangalore Days",
+            "source": "https://m.media-amazon.com/images/M/MV5BZmY5NjNjYWMtNmJhNi00YTk0LTg0OWUtNDE4OGQ0YmM4NDAwXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Click on the Region you want:",
+            "options": [
+              {
+                "label": "Bangalore",
+                "value": {
+                  "input": {
+                    "text": "Bangalore"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Hyderabad",
+                "value": {
+                  "input": {
+                    "text": "Hyderabad"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1603262164424",
+      "conditions": "@Movies_Availablity:(Bangalore Days)",
+      "dialog_node": "response_3_1603262164435",
+      "previous_sibling": "response_2_1603262164435"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Mangalyaan",
+            "source": "https://parthasadhukhan.files.wordpress.com/2019/08/mission-mangal-poster.png?w=640",
+            "response_type": "image"
+          },
+          {
+            "title": "Click on the region you want:",
+            "options": [
+              {
+                "label": "Bangalore",
+                "value": {
+                  "input": {
+                    "text": "Bangalore"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Hyderabad",
+                "value": {
+                  "input": {
+                    "text": "Hyderabad"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1603262164424",
+      "conditions": "@Movies_Availablity:Mangalyaan",
+      "dialog_node": "response_4_1603262164435",
+      "previous_sibling": "response_3_1603262164435"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Morning. How may I help you!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602838217828",
+      "conditions": "@Greetings:(Good Morning)",
+      "dialog_node": "response_5_1602838441598",
+      "previous_sibling": "response_6_1602838398480"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "English Movie- Rs 300;\nHindi Movie -Rs 250;\nRegional Movie - Rs 200"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1602839749890",
+      "conditions": "@Inquiry:cost",
+      "dialog_node": "response_5_1603188579837",
+      "previous_sibling": "response_3_1603103538739"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "The Lion King",
+            "source": "https://i.pinimg.com/originals/3f/91/74/3f9174c6b303e839c6526c3a175d7af9.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select the region you want:",
+            "options": [
+              {
+                "label": "Bangalore",
+                "value": {
+                  "input": {
+                    "text": "Bangalore"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Hyderabad",
+                "value": {
+                  "input": {
+                    "text": "Hyderabad"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1603262164424",
+      "conditions": "@Movies_Availablity:(Lion King)",
+      "dialog_node": "response_5_1603262164435",
+      "previous_sibling": "response_4_1603262164435"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Afternoon. How may I help you!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602838217828",
+      "conditions": "@Greetings:(Good Afternoon)",
+      "dialog_node": "response_6_1602838398480"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Movie List",
+            "options": [
+              {
+                "label": "Tanhaji-Hindi",
+                "value": {
+                  "input": {
+                    "text": "Tanhaji"
+                  }
+                }
+              },
+              {
+                "label": "Bahubali-Kannada",
+                "value": {
+                  "input": {
+                    "text": "Bahubali"
+                  }
+                }
+              },
+              {
+                "label": "The Lion King- English",
+                "value": {
+                  "input": {
+                    "text": "The Lion King"
+                  }
+                }
+              },
+              {
+                "label": "Bangalore Days-Malayalam",
+                "value": {
+                  "input": {
+                    "text": "Bangalore Days"
+                  }
+                }
+              },
+              {
+                "label": "Mangalyaan-Hindi",
+                "value": {
+                  "input": {
+                    "text": "Mangalyaan"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_8_1602839749890",
+      "conditions": "@Inquiry:Movies",
+      "dialog_node": "response_6_1602839821699"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Bahubali",
+            "source": "https://i.pinimg.com/originals/1a/f4/a1/1af4a18292ae7257edabef194795f449.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select the region you want:",
+            "options": [
+              {
+                "label": "Bangalore",
+                "value": {
+                  "input": {
+                    "text": "Bangalore"
+                  }
+                }
+              },
+              {
+                "label": "Chennai",
+                "value": {
+                  "input": {
+                    "text": "Chennai"
+                  }
+                }
+              },
+              {
+                "label": "Mumbai",
+                "value": {
+                  "input": {
+                    "text": "Mumbai"
+                  }
+                }
+              },
+              {
+                "label": "Hyderabad",
+                "value": {
+                  "input": {
+                    "text": "Hyderabad"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1603262164424",
+      "conditions": "@Movies_Availablity:Bahubali",
+      "dialog_node": "response_6_1603262164435",
+      "previous_sibling": "response_5_1603262164435"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi. How may I help you!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602838217828",
+      "conditions": "@Greetings:Hello",
+      "dialog_node": "response_7_1602838484351",
+      "previous_sibling": "response_2_1602838457409"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi. How may I help you!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602838217828",
+      "conditions": "anything_else",
+      "dialog_node": "response_7_1602838536926",
+      "previous_sibling": "response_2_1603188289547"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Select the number of Seats:",
+            "options": [
+              {
+                "label": "1",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "2",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              },
+              {
+                "label": "3",
+                "value": {
+                  "input": {
+                    "text": "3"
+                  }
+                }
+              },
+              {
+                "label": "4",
+                "value": {
+                  "input": {
+                    "text": "4"
+                  }
+                }
+              },
+              {
+                "label": "5",
+                "value": {
+                  "input": {
+                    "text": "5"
+                  }
+                }
+              },
+              {
+                "label": "6",
+                "value": {
+                  "input": {
+                    "text": "6"
+                  }
+                }
+              },
+              {
+                "label": "7",
+                "value": {
+                  "input": {
+                    "text": "7"
+                  }
+                }
+              },
+              {
+                "label": "8",
+                "value": {
+                  "input": {
+                    "text": "8"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1603262289690",
+      "conditions": "@region:Bangalore",
+      "dialog_node": "response_7_1603262333557"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How may I help you!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602838217828",
+      "conditions": "@Greetings:Hi",
+      "dialog_node": "response_8_1602838499523",
+      "previous_sibling": "response_7_1602838484351"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Outside Food and Beverages are not allowed. Food can be purchased from Lounge"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1602839749890",
+      "conditions": "@Inquiry:food",
+      "dialog_node": "response_8_1602840507536",
+      "previous_sibling": "response_9_1602840417823"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Show Timings",
+            "source": "https://pbs.twimg.com/media/BhepR6nCEAATtzv.png",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_8_1602839749890",
+      "conditions": "@Inquiry:timings",
+      "dialog_node": "response_9_1602840417823",
+      "previous_sibling": "response_6_1602839821699"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Select the number of Seats:",
+            "options": [
+              {
+                "label": "1",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "2",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              },
+              {
+                "label": "3",
+                "value": {
+                  "input": {
+                    "text": "3"
+                  }
+                }
+              },
+              {
+                "label": "4",
+                "value": {
+                  "input": {
+                    "text": "4"
+                  }
+                }
+              },
+              {
+                "label": "5",
+                "value": {
+                  "input": {
+                    "text": "5"
+                  }
+                }
+              },
+              {
+                "label": "6",
+                "value": {
+                  "input": {
+                    "text": "6"
+                  }
+                }
+              },
+              {
+                "label": "7",
+                "value": {
+                  "input": {
+                    "text": "7"
+                  }
+                }
+              },
+              {
+                "label": "8",
+                "value": {
+                  "input": {
+                    "text": "8"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1603262289690",
+      "conditions": "@region:Mumbai",
+      "dialog_node": "response_9_1603265189497",
+      "previous_sibling": "response_1_1603265129534"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1603265630036",
+      "variable": "$number_2",
+      "dialog_node": "slot_10_1603273932663",
+      "previous_sibling": "slot_3_1603273750064"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1603265630036",
+      "variable": "$number",
+      "dialog_node": "slot_3_1603273750064",
+      "previous_sibling": "slot_8_1603273425183"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1603265630036",
+      "variable": "$payment",
+      "dialog_node": "slot_5_1603275395461",
+      "previous_sibling": "slot_10_1603273932663"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1603265630036",
+      "variable": "$Mutiplexes",
+      "dialog_node": "slot_8_1603273425183",
+      "previous_sibling": "slot_9_1603273372231"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1603265630036",
+      "variable": "$slot",
+      "dialog_node": "slot_9_1603273372231",
+      "previous_sibling": "node_7_1603518837937"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. I am Movie Bot. I am capable of displaying the List of Movies, show timings and price . How may I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Movie Chart",
+            "source": "https://i.pinimg.com/736x/68/86/92/68869239cdf5ce741b69dabb603f5d40.jpg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Movie bot",
+  "language": "en",
+  "description": ""
+}
